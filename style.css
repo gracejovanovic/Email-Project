@@ -1,0 +1,235 @@
+.bg-body {
+    background: url("stars.jpeg");
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.row {
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.searchbar {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#navbarDropdown {
+    margin-right: 40px;
+}
+
+.navbar {
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(248, 248, 255, 0.65);
+    top: 0;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.logo-name {
+    font-family: fantasy;
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 15px;
+    color: black;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.dropdown{
+    /* height: 45px;
+    width:40px; */
+}
+
+.content {
+    height: inherit;
+    flex-direction: column;
+    padding: 8px 20px;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+
+.form-control {
+    background-color: ghostwhite;
+    padding: 15px 20px;
+    background: opacity -50px;
+}
+
+.mybutton {
+    display: block;
+    width: 75%;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 15%;
+    margin: 15px 0 0 25px;
+    background-color: rgb(148, 147, 147);
+}
+
+.buttonC {
+    display: block;
+    width: 95%;
+    padding: .95rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 15%;
+    margin: 15px 0 0 8px;
+    margin-bottom: 50px;
+    background-color: rgb(148, 147, 147);
+}
+
+.mybutton:hover, .buttonC:hover {
+    background-color: lightgray;
+    color: rgb(60, 58, 58);
+}
+
+.email-content, .left-bar {
+    background-color: rgba(248, 248, 255, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+    position: sticky;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow-y: scroll;
+}
+
+.email-list {
+    background-color: rgba(248, 248, 255, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.card-body {
+    display: block;
+    flex-direction: column-reverse;
+    justify-self: center;
+    padding: 15px;
+    width: 90;
+    height: 90;
+    border: solid darkgray;
+    border-radius: 5px;
+    color: black;
+    padding-inline: 10px;
+    margin-bottom: 25px;
+    overflow: scroll;
+}
+.vh-99 {
+    height: 85vh;
+}
+
+.email-btn:hover {
+    background-color: lightgray;
+    color: rgb(60, 58, 58);
+}
+
+.email-content {
+    padding: 15px;
+}
+
+.card-link {
+    border-bottom: solid black;
+    text-decoration: none;
+    padding: 2px;
+    color: blue;
+}
+
+#reply {
+    box-sizing:border-box;
+    margin: 5px;
+    margin-top: 15px;
+    width:95%;
+    height: 95%;
+}
+      
+.icon {
+    color: white;
+}
+
+.mobile-icons {
+    display: none;
+}
+
+/* For Reference
+    xs < 576px  -- phones
+    s >= 576px  -- tablets
+    m >= 768px  -- small laptops
+    lg >= 992px -- desktops
+    xl >= 1200px -- larger desktops
+    xxl >= 1400px  -- real big desktops
+
+    */
+
+@media (max-width: 993px) {
+    .left-bar {
+        display: none;
+    }
+    .email-content {
+        margin-right: 10px;
+        width: 85%;
+    }
+    .dropdown {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .email-list {
+        display: none;
+    }
+    .email-content {
+        width: 85%;
+    }
+    .dropdown {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1218px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .email-list {
+        margin-left: 20px;
+        width: 30%;
+    }
+
+    .email-content {
+        width: 60%;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .mobile-icons {
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-bar, .card-text, .card-link, .logo-name {
+        display: none;
+    }
+
+    .navbar-logo {
+        padding-right: 80px;
+    }
+
+    .dropdown {
+        padding-left: 60px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
