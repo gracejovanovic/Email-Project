@@ -1,3 +1,12 @@
+::-webkit-scrollbar{
+    display:none;
+}
+
+.fit-window{
+    height: calc(100vh-50px);
+    overflow: hidden;
+}
+
 .bg-body {
     background: url("stars.jpeg");
     background-position:center;
@@ -7,8 +16,6 @@
 
 .row {
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 40px;
 }
 
 .searchbar {
@@ -23,11 +30,7 @@
 
 .navbar {
     justify-content: space-between;
-    position: fixed;
     background-color: rgba(248, 248, 255, 0.65);
-    top: 0;
-    padding-right: 20px;
-    padding-top: 20px;
     border-radius: 5px;
 }
 
@@ -35,29 +38,13 @@
     font-family: fantasy;
     display: inline-block;
     font-size: 30px;
-    padding-left: 15px;
     color: black;
     margin-left: 5px;
     margin-top: 5px;
 }
 
-.dropdown{
-    /* height: 45px;
-    width:40px; */
-}
-
-.content {
-    height: inherit;
-    flex-direction: column;
-    padding: 8px 20px;
-    border-radius: 15px;
-    justify-content: space-between;
-    padding-top: 95px;
-}
-
 .form-control {
     background-color: ghostwhite;
-    padding: 15px 20px;
     background: opacity -50px;
 }
 
@@ -113,16 +100,12 @@
     justify-self: center;
     padding: 15px;
     width: 90;
-    height: 90;
     border: solid darkgray;
     border-radius: 5px;
     color: black;
     padding-inline: 10px;
     margin-bottom: 25px;
     overflow: scroll;
-}
-.vh-99 {
-    height: 85vh;
 }
 
 .email-btn:hover {
@@ -145,8 +128,8 @@
     box-sizing:border-box;
     margin: 5px;
     margin-top: 15px;
-    width:95%;
-    height: 95%;
+    width: 95%;
+
 }
       
 .icon {
