@@ -3,7 +3,7 @@
 }
 
 .fit-window{
-    height: calc(100vh-50px);
+    height: 90%;
     overflow: hidden;
 }
 
@@ -155,8 +155,9 @@
         display: none;
     }
     .email-content {
-        margin-right: 10px;
+        margin-right: 30px;
         width: 85%;
+        align-items: center;
     }
     .dropdown {
         padding-right: 10px;
